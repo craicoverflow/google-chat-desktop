@@ -1,12 +1,12 @@
 before:
   hooks:
 env:
-  - CGO_ENABLED=1
+  - CGO_ENABLED=0
   - GO111MODULE=on
 builds:
   - main: ./main.go
-    id: google-chat-desktop
-    binary: google-chat-desktop
+    id: google-chat
+    binary: google-chat
     goos:
       - linux
       - windows
